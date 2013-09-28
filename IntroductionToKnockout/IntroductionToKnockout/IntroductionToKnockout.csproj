@@ -14,7 +14,7 @@
     <RootNamespace>IntroductionToKnockout</RootNamespace>
     <AssemblyName>IntroductionToKnockout</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -79,6 +79,7 @@
     <Content Include="Content\images\ko-logo.png" />
     <Content Include="Content\images\main-background.jpg" />
     <Content Include="Content\images\truck-icon.jpg" />
+    <Content Include="Content\master.css" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -107,7 +108,9 @@
     <Compile Include="Data\FakeDatabase.cs" />
     <Compile Include="MainConfig.cs" />
     <Compile Include="Modules\BaseRoutes.cs" />
-    <Compile Include="Modules\ServicesModule.cs" />
+    <Compile Include="Modules\ServicesModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,9 +135,9 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49385</DevelopmentServerPort>
+          <DevelopmentServerPort>49333</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/IntroductionToKnockout</IISUrl>
+          <IISUrl>http://localhost:57067/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
